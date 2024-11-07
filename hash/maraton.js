@@ -1,0 +1,20 @@
+
+//테스트 통과 했지만 효율성에서 탈락한 방법 
+//해시 문제이지만 해시 방법을 사용하지 않음 
+const maraton = (participant,completion) => {
+    var answer = '';
+    let i = 0;
+    participant.sort((a, b) => a.localeCompare(b));
+    completion.sort((a, b) => a.localeCompare(b));
+    
+    while(true){
+        if(completion.includes(participant[0])){
+            participant.splice(0,1)
+            completion.splice(0,1)
+        }else{
+            break
+        }
+    }
+    
+    return participant[0]
+}
