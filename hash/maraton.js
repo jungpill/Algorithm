@@ -18,3 +18,23 @@ const maraton = (participant,completion) => {
     
     return participant[0]
 }
+
+const solution = (participant, completion) => {
+    const participantCount = {};
+
+    for (let p of participant) {
+        participantCount[p] = (participantCount[p] || 0) + 1;
+    }
+
+    
+    for (let c of completion) {
+        participantCount[c]--; 
+    }
+
+    
+    for (let p in participantCount) {
+        if (participantCount[p] > 0) {
+            return p; 
+        }
+    }
+}
