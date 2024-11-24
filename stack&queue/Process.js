@@ -13,7 +13,7 @@ function solution(priorities, location) {
             temp++
             count++
             console.log(priorities)
-        }
+        }``
     }else if(temp >= priorities.length){
         temp = 0
     }else{
