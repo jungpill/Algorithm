@@ -18,7 +18,6 @@ function solution(k, m, score) {
 }
     */
 
-
 function solution(k, m, score) {
     var totalBox = (score.length / m)
     let result = 0
