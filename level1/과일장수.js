@@ -19,7 +19,6 @@ function solution(k, m, score) {
     */
 
 function solution(k, m, score) {
-    var totalBox = (score.length / m)
     let result = 0
     var temp = []
     score.sort((a,b) => a - b)
