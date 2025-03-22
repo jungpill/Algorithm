@@ -12,7 +12,7 @@ function solution(schedules, timelogs, startday) {
             }else if(temp >= 40 && temp <= 50 &&
                     Math.floor(timelogs[i][j] / 100) !== 
                     Math.floor(schedules[i] / 100)){
-                 count++
+                 count++         
             }
             if(today === 7) today = 0
             today++
